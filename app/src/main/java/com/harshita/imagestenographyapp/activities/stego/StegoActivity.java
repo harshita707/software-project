@@ -96,7 +96,7 @@ public class StegoActivity extends AppCompatActivity implements StegoView {
     Picasso.with(this)
       .load(new File(path))
       .fit()
-      .placeholder(R.drawable.ic_upload)
+      .placeholder(R.drawable.ic_upload_icon)
       .into(ivStegoImage);
     stopProgressDialog();
   }

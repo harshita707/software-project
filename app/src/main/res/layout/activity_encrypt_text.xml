@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#121212"
+    android:background="@color/background_color_grey"
     android:fillViewport="true"
     app:layout_constraintTop_toBottomOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"
@@ -15,7 +15,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/activity_encrypt_text"
-        android:background="#121212"
+        android:background="@color/background_color_grey"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
@@ -45,7 +45,7 @@
                 android:text="@string/select_image_title"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textColor="#ffffff"
+                android:textColor="#000"
                 android:layout_marginBottom="30dp"
                 android:textSize="24sp" />
 
@@ -58,7 +58,7 @@
                 android:baselineAlignBottom="false"
                 android:contentDescription="@string/select_image_title"
                 android:textAlignment="gravity"
-                app:srcCompat="@drawable/ic_upload"
+                app:srcCompat="@drawable/ic_upload_icon"
                 tools:ignore="VectorDrawableCompat" />
 
             <TextView
@@ -68,7 +68,7 @@
                 android:fontFamily="serif"
                 android:text="SECRETE MESSAGE"
                 android:textAlignment="center"
-                android:textColor="#ffffff"
+                android:textColor="#000"
                 android:textIsSelectable="true"
                 android:layout_marginBottom="20dp"
                 android:textSize="24sp" />
@@ -90,7 +90,7 @@
                 android:overScrollMode="always"
                 android:padding="8dp"
                 android:scrollbars="vertical"
-                android:textColor="#070000"
+                android:textColor="#fff"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

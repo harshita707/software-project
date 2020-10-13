@@ -27,6 +27,10 @@
   <color name="dot_light_screen2">#ffffff</color>
   <color name="dot_light_screen3">#ffffff</color>
   <color name="dot_light_screen4">#ffffff</color>
+    <color name="background_color_grey">#DCDCDC</color>
+  <color name="primary_blue">#005B96</color>
+  <color name="primary_blue_dark">#03396c</color>
+  <color name="promary_blue_darkest">#011f4b</color>
 
   <array name="array_dot_active">
     <item>@color/dot_light_screen1</item>

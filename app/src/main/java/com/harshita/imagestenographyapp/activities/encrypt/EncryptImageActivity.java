@@ -68,7 +68,6 @@ public class EncryptImageActivity extends AppCompatActivity implements EncryptVi
   public void onCoverSecretImageClick(View view) {
 
     final CharSequence[] items = {
-      getString(R.string.take_image_dialog),
       getString(R.string.select_image_dialog)
     };
 
@@ -269,7 +268,7 @@ public class EncryptImageActivity extends AppCompatActivity implements EncryptVi
     Picasso.with(this)
       .load(file)
       .fit()
-      .placeholder(R.drawable.ic_upload)
+      .placeholder(R.drawable.ic_upload_icon)
       .into(ivCoverImage);
     stopProgressDialog();
     whichImage = -1;
@@ -291,7 +290,7 @@ public class EncryptImageActivity extends AppCompatActivity implements EncryptVi
     Picasso.with(this)
       .load(file)
       .fit()
-      .placeholder(R.drawable.ic_upload)
+      .placeholder(R.drawable.ic_upload_icon)
       .into(ivSecretImage);
     stopProgressDialog();
     whichImage = -1;

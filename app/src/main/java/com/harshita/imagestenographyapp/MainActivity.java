@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     } else if(view.getId() == R.id.bAMDecrypt) {
       Intent intent = new Intent(MainActivity.this, DecryptActivity.class);
       startActivity(intent);
-    }
+    }ic
   }*/
 
   @Override
@@ -78,24 +78,7 @@ public class MainActivity extends AppCompatActivity {
       actionBar.setTitle("Crypto Messenger");
     }
   }*/
-public boolean onCreateOptionsMenu(Menu menu) {
-  // Inflate the menu; this adds items to the action bar if it is present.
-  getMenuInflater().inflate(R.menu.menu, menu);
-  return true;
-}
 
-  public boolean onOptionsItemSelected(MenuItem item) {
-    int id = item.getItemId();
 
-    if (id == R.id.action_name) {
-      Intent i = new Intent(getApplicationContext(), WelcomeActivity.class);
-      i.putExtra("check", "true");
-      startActivity(i);
 
-      Log.d("I", "In fb button");
-      return true;
-
-    }
-    return true;
-  }
 }

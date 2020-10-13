@@ -164,7 +164,7 @@ public class DecryptActivity extends AppCompatActivity implements DecryptView {
     Picasso.with(this)
       .load(file)
       .fit()
-      .placeholder(R.drawable.ic_upload)
+      .placeholder(R.drawable.ic_upload_icon)
       .into(ivStegoImage);
     stopProgressDialog();
     isSISelected = true;

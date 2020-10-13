@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#121212"
+    android:background="@color/background_color_grey"
     android:fillViewport="true"
     app:layout_constraintTop_toBottomOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"
@@ -15,7 +15,7 @@
 
   <androidx.constraintlayout.widget.ConstraintLayout
       android:id="@+id/activity_encrypt"
-      android:background="#121212"
+      android:background="@color/background_color_grey"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:fitsSystemWindows="true"
@@ -49,7 +49,7 @@
           android:textAlignment="center"
           android:layout_marginBottom="20dp"
           android:textAllCaps="true"
-          android:textColor="#ffffff"
+          android:textColor="#000"
           android:textIsSelectable="false"
           android:textSize="30sp"
           android:textStyle="bold" />
@@ -62,7 +62,7 @@
           android:contentDescription="@string/stego_image_title"
           android:paddingBottom="5dp"
           android:layout_marginBottom="30dp"
-          app:srcCompat="@drawable/ic_upload"
+          app:srcCompat="@drawable/ic_upload_icon"
           tools:ignore="VectorDrawableCompat" />
 
       <androidx.appcompat.widget.AppCompatButton
