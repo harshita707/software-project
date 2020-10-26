@@ -67,6 +67,14 @@
         android:hint="@string/et_secret_text"
         android:id="@+id/etSecretMessage"/>
 
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="textMultiLine"
+          android:ems="10"
+          android:hint="@string/key"
+          android:id="@+id/etSecretKey"/>
+
     <ImageView
         android:layout_width="@dimen/large_image_square"
         android:layout_height="@dimen/large_image_square"

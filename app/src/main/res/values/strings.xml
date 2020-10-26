@@ -1,7 +1,7 @@
 <resources>
 
     <!--View Titles-->
-    <string name="app_name">SecreteStagano</string>
+    <string name="app_name">Software project</string>
     <string name="select_image_title">Select Cover Image</string>
     <string name="stego_image_title">Result Image</string>
     <string name="decrypt_result_title">Secret Message</string>
@@ -61,4 +61,5 @@
 
     <string name="slide_4_title">Warning</string>
     <string name="slide_4_desc">Do not share images via WhatsApp or Facebook because these apps compresses images which leads to loss of encoded message</string>
+    <string name="key">Key...</string>
 </resources>

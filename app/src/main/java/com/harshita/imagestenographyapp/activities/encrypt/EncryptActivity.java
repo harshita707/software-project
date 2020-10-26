@@ -46,6 +46,8 @@ public class EncryptActivity extends AppCompatActivity implements EncryptView {
 
   @BindView(R.id.etSecretMessage)
   EditText etSecretMessage;
+  @BindView(R.id.etSecretKey)
+  EditText etSecretKey;
   @BindView(R.id.ivCoverImage)
   ImageView ivCoverImage;
   @BindView(R.id.ivSecretImage)
@@ -57,24 +59,7 @@ public class EncryptActivity extends AppCompatActivity implements EncryptView {
 
   static final int CAMERA_REQUEST = 1888;
   static final int MY_CAMERA_PERMISSION_CODE = 100;
-  /*@BindView(R.id.rbText)
-  RadioButton rbText;
-  @BindView(R.id.rbImage)
-  RadioButton rbImage;
 
-  @OnCheckedChanged({R.id.rbText, R.id.rbImage})
-  public void onRadioButtonClick() {
-    if (rbImage.isChecked()) {
-      etSecretMessage.setVisibility(View.GONE);
-      ivSecretImage.setVisibility(View.VISIBLE);
-      secretMessageType = Constants.TYPE_IMAGE;
-    } else if (rbText.isChecked()) {
-      etSecretMessage.setVisibility(View.VISIBLE);
-      ivSecretImage.setVisibility(View.GONE);
-      secretMessageType = Constants.TYPE_TEXT;
-    }
-  }
-*/
   @OnClick({R.id.ivCoverImage, R.id.ivSecretImage})
   public void onCoverSecretImageClick(View view) {
 
