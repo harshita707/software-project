@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.harshita.imagestenographyapp.algorithms.AESencryption;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -29,6 +31,8 @@ public class DecryptResultActivity extends AppCompatActivity {
 
   private String secretImagePath;
   private String secretMessage;
+  private String password;
+  private String decryptText = null;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -45,13 +49,20 @@ public class DecryptResultActivity extends AppCompatActivity {
     Intent intent = getIntent();
 
     if (intent != null) {
+      password = intent.getStringExtra("secretKey");
       Bundle bundle = intent.getExtras();
       secretMessage = bundle.getString(Constants.EXTRA_SECRET_TEXT_RESULT);
       secretImagePath = bundle.getString(Constants.EXTRA_SECRET_IMAGE_RESULT);
     }
 
     if (secretMessage != null) {
-      tvSecretMessage.setText(secretMessage);
+      try {
+         decryptText = AESencryption.decryptText(secretMessage, password);
+      } catch (Exception e) {
+        Toast.makeText(this, "Wrong password", Toast.LENGTH_SHORT).show();
+        e.printStackTrace();
+      }
+      tvSecretMessage.setText(decryptText);
     } else if (secretImagePath != null) {
       ivSecretImage.setVisibility(View.VISIBLE);
       setSecretImage(secretImagePath);

@@ -8,7 +8,7 @@ import java.io.File;
 interface EncryptView {
 
 
-  String getSecretMessage();
+  String getSecretMessage() throws Exception;
 
   Bitmap getCoverImage();
 

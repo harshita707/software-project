@@ -190,7 +190,11 @@ class EncryptPresenterImpl implements EncryptPresenter, EncryptInteractorImpl.En
     }
 
     mView.showProgressDialog();
-    mInteractor.performSteganography(mView.getSecretMessage(), coverImage, null);
+    try {
+      mInteractor.performSteganography(mView.getSecretMessage(), coverImage, null);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
   }
 
   @Override

@@ -10,6 +10,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -33,6 +34,9 @@ public class DecryptActivity extends AppCompatActivity implements DecryptView {
 
   @BindView(R.id.ivStegoImage)
   ImageView ivStegoImage;
+
+  @BindView(R.id.etSecretKey)
+  EditText etSecretKey;
 
   @OnClick(R.id.ivStegoImage)
   public void onStegoImageClick() {
@@ -141,7 +145,7 @@ public class DecryptActivity extends AppCompatActivity implements DecryptView {
     if (secretImagePath != null) {
       intent.putExtra(Constants.EXTRA_SECRET_IMAGE_RESULT, secretImagePath);
     }
-
+    intent.putExtra("secretKey", etSecretKey.getText().toString());
     startActivity(intent);
   }
 

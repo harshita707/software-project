@@ -27,6 +27,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
 
+import com.harshita.imagestenographyapp.algorithms.AESencryption;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -347,7 +348,16 @@ public class EncryptActivity extends AppCompatActivity implements EncryptView {
 
   @Override
   public String getSecretMessage() {
-    return etSecretMessage.getText().toString().trim();
+
+    String inputText = etSecretMessage.getText().toString().trim();
+    String key = etSecretKey.getText().toString().trim();
+    String outputText = null;
+    try {
+      outputText = AESencryption.encryptText(inputText, key);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return outputText;
   }
 
   @Override

@@ -66,6 +66,29 @@
                 app:srcCompat="@drawable/ic_upload_icon"
                 tools:ignore="VectorDrawableCompat" />
 
+            <EditText
+                android:id="@+id/etSecretKey"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/edit_text_shape"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:gravity="start|top"
+                android:hint="Type your secrete key here..."
+                android:layout_marginBottom="40dp"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:overScrollMode="always"
+                android:padding="8dp"
+                android:scrollbars="vertical"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.0" />
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/bDecrypt"
                 android:layout_width="match_parent"
