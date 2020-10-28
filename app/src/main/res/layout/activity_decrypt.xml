@@ -69,7 +69,7 @@
             <EditText
                 android:id="@+id/etSecretKey"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/edit_text_shape"
                 android:ems="10"
                 android:fontFamily="serif"
@@ -79,7 +79,7 @@
                 android:inputType="textMultiLine"
                 android:isScrollContainer="true"
                 android:overScrollMode="always"
-                android:padding="8dp"
+                android:padding="16dp"
                 android:scrollbars="vertical"
                 android:textColor="#fff"
                 android:textSize="20sp"
@@ -96,7 +96,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/edit_text_shape"
-                android:padding="5dp"
+                android:padding="15dp"
                 android:text="Decrypt the secrete image"
                 android:textColor="@color/colorPrimaryWhite" />
 

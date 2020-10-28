@@ -43,7 +43,7 @@
           android:fontFamily="serif"
           android:paddingTop="3dp"
           android:paddingBottom="5dp"
-          android:text="single level protection Layer encrypted...\n Here is your secrete message"
+          android:text="Here is the result of your decryption"
           android:textAlignment="center"
           android:textAllCaps="true"
           android:textColor="@color/colorPrimaryBlack"

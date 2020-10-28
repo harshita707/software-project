@@ -281,6 +281,7 @@ public class EncryptImageActivity extends AppCompatActivity implements EncryptVi
 
   @Override
   public Bitmap getSecretImage() {
+
     return ((BitmapDrawable) ivSecretImage.getDrawable()).getBitmap();
   }
 

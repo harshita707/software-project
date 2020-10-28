@@ -62,6 +62,9 @@ public class DecryptResultActivity extends AppCompatActivity {
         Toast.makeText(this, "Wrong password", Toast.LENGTH_SHORT).show();
         e.printStackTrace();
       }
+      if(decryptText !=null ) {
+        Toast.makeText(this, R.string.decrypt_success, Toast.LENGTH_SHORT).show();
+      }
       tvSecretMessage.setText(decryptText);
     } else if (secretImagePath != null) {
       ivSecretImage.setVisibility(View.VISIBLE);

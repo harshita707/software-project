@@ -54,14 +54,14 @@ class DecryptPresenterImpl implements DecryptPresenter, DecryptInteractorImpl.De
   @Override
   public void onPerformDecryptionSuccessText(String text) {
     mView.stopProgressDialog();
-    mView.showToast(R.string.decrypt_success);
+   // mView.showToast(R.string.decrypt_success);
     mView.startDecryptResultActivity(text, null);
   }
 
   @Override
   public void onPerformDecryptionSuccessImage(Bitmap secretImage) {
     mView.stopProgressDialog();
-    mView.showToast(R.string.decrypt_success);
+    //mView.showToast(R.string.decrypt_success);
     String filePath = storeSecretImage(secretImage);
     mView.startDecryptResultActivity(null, filePath);
   }
